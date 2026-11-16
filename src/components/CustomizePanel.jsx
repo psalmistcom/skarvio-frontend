@@ -33,12 +33,12 @@ export default function CustomizePanel({ config, errors, onChange }) {
       {text("url", "YouTube link", {
         placeholder: "https://youtube.com/watch?v=...",
       })}
-      {text("title", "Name (optional)", {
+      {/* {text("title", "Name (optional)", {
         placeholder: "My video",
         hint: "Shown in the browser tab",
-      })}
+      })} */}
 
-      <Field label="Brand color">
+      {/* <Field label="Brand color">
         <input
           type="color"
           className="h-10 w-full cursor-pointer rounded-lg border border-neutral-300 bg-white p-1 dark:border-neutral-700 dark:bg-neutral-900"
@@ -55,7 +55,7 @@ export default function CustomizePanel({ config, errors, onChange }) {
         placeholder: "Thanks for watching",
       })}
       {text("ctaLabel", "Button label", { placeholder: "Visit our site" })}
-      {text("ctaUrl", "Button link", { placeholder: "https://" })}
+      {text("ctaUrl", "Button link", { placeholder: "https://" })} */}
     </div>
   );
 }

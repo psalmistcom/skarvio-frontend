@@ -94,6 +94,13 @@ export default function App() {
       <main className="mx-auto max-w-6xl px-4 py-8">
         <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
           <section>
+            <div className="mb-6 ">
+              <CustomizePanel
+                config={config}
+                errors={errors}
+                onChange={update}
+              />
+            </div>
             {videoId ? (
               player
             ) : (
@@ -127,7 +134,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <p className="mb-1 text-sm font-semibold">Embed code</p>
                   <div className="flex gap-2">
                     <textarea
@@ -157,19 +164,19 @@ export default function App() {
                   >
                     Open embed view <ExternalLink className="h-3 w-3" />
                   </a>
-                </div>
+                </div> */}
               </div>
             )}
           </section>
           <aside className="lg:sticky lg:top-6 lg:self-start">
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+            {/* <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
               Customize
             </h2>
             <CustomizePanel config={config} errors={errors} onChange={update} />
             <p className="mt-6 text-xs text-neutral-500">
               Nothing is stored on a server. Your settings live in the share
               link.
-            </p>
+            </p> */}
           </aside>
         </div>
       </main>
