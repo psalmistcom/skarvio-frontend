@@ -30,7 +30,7 @@ export default function CustomizePanel({ config, errors, onChange }) {
 
   return (
     <div className="space-y-4">
-      {text("url", "YouTube link", {
+      {text("url", "Paste a YouTube link", {
         placeholder: "https://youtube.com/watch?v=...",
       })}
       {/* {text("title", "Name (optional)", {

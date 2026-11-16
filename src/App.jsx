@@ -85,7 +85,15 @@ export default function App() {
     <div className="min-h-screen bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
       <header className="border-b border-neutral-200 dark:border-neutral-800">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <span className="text-lg font-semibold">Skarvio</span>
+          <span className="text-lg font-semibold">
+            {" "}
+            <img
+              src="/logo.png"
+              alt=""
+              className="h-5 w-5 mr-2 inline-flex items-center"
+            />{" "}
+            Skarvio
+          </span>
           <span className="text-sm text-neutral-500">
             Customize any YouTube link
           </span>
