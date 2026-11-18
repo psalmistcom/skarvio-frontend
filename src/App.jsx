@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Check, Copy, ExternalLink } from "lucide-react";
 
+import AdSlot from "./components/AdSlot";
 import CustomizePanel from "./components/CustomizePanel";
 import PlayerStage from "./components/PlayerStage";
 import { decodeConfig, encodeConfig } from "./lib/share";
@@ -99,6 +100,7 @@ export default function App() {
           </span>
         </div>
       </header>
+      <AdSlot placement="top" className="mx-auto max-w-6xl px-4 pt-4" />
       <main className="mx-auto max-w-6xl px-4 py-8">
         <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
           <section>
@@ -176,15 +178,8 @@ export default function App() {
               </div>
             )}
           </section>
-          <aside className="lg:sticky lg:top-6 lg:self-start">
-            {/* <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
-              Customize
-            </h2>
-            <CustomizePanel config={config} errors={errors} onChange={update} />
-            <p className="mt-6 text-xs text-neutral-500">
-              Nothing is stored on a server. Your settings live in the share
-              link.
-            </p> */}
+          <aside className="min-w-0 lg:sticky lg:top-6 lg:self-start">
+            <AdSlot placement="side" />
           </aside>
         </div>
       </main>
